@@ -1,0 +1,26 @@
+{
+  "app": {
+    "name": "nodex-0",
+    "version": "1.0.0"
+  },
+  "data": {
+    "mysql": {
+      "host": "127.0.0.1",
+      "port": 3306,
+      "user": "root",
+      "password": "root",
+      "database": "test"
+    }
+  },
+  "logic": {
+    
+  },
+  "serv": {
+    "name": "nodex-0",
+    "host": "127.0.0.1",
+    "port": 8080,
+    "cors": true,
+    "log": true,
+    "proxy": true
+  }
+}
