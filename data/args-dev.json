@@ -13,7 +13,8 @@
     },
     "mongodb": {
       "url": "mongodb://127.0.0.1:27017",
-      "dbName": "test"
+      "dbName": "test",
+      "collectionName": "dss"
     }
   },
   "logic": {
@@ -25,6 +26,7 @@
     "port": 8080,
     "cors": true,
     "log": true,
-    "proxy": true
+    "proxy": true,
+    "ping": true
   }
 }
