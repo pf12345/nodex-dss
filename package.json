@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "mongodb": "^3.6.2",
-    "nodex-libs": "^2.1.4"
+    "nodex-libs": "^2.1.8"
   },
   "devDependencies": {
     "cross-env": "^5.2.1",
