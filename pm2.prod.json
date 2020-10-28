@@ -1,6 +1,6 @@
 {
     "apps": {
-        "name": "nodex-0",
+        "name": "nodex-dss",
         "script": "src/app.js",
         "watch": true,
         "env": {

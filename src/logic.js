@@ -23,7 +23,10 @@ exports.addData = async function (body) {
 
 exports.getDataById = async function ({ id, appid }) {
     fmt.required(appid, 'word', 4, 64);
+    console.log(appid)
     const result = await data.getDataById(id, appid);
+    console.log(result)
+
     return result;
 }
 

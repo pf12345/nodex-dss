@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "nodex-0",
+    "name": "nodex-dss",
     "version": "1.0.0"
   },
   "data": {
@@ -10,13 +10,18 @@
       "user": "root",
       "password": "root",
       "database": "test"
+    },
+    "mongodb": {
+      "url": "mongodb://127.0.0.1:27017",
+      "dbName": "test",
+      "collectionName": "dss"
     }
   },
   "logic": {
     
   },
   "serv": {
-    "name": "nodex-0",
+    "name": "nodex-dss",
     "host": "0.0.0.0",
     "port": 80,
     "cors": true,
