@@ -12,8 +12,8 @@
       "database": "test"
     },
     "mongodb": {
-      "url": "mongodb://127.0.0.1:27017",
-      "dbName": "test",
+      "url": "mongodb://ls_dba_mongo_02:ls_dba_mongo_02#a8d@www.plaifox.com:58017",
+      "dbName": "nodex_dss",
       "collectionName": "dss"
     }
   },
