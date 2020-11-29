@@ -43,8 +43,8 @@ exports.deleteData = async function ({ id, appid }) {
     return result;
 }
 
-exports.listData = async function({ appid, page, size }) {
+exports.listData = async function({ appid, page, size, query }) {
     fmt.required(appid, 'word', 4, 64);
-    const result = await data.listData(appid, page, size);
+    const result = await data.listData(appid, page, size, query);
     return result;
 }

@@ -21,7 +21,7 @@
     
   },
   "serv": {
-    "name": "nodex-dssx",
+    "name": "nodex-dss",
     "host": "127.0.0.1",
     "port": 8080,
     "cors": true,

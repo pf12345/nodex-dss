@@ -88,7 +88,7 @@ exports.deleteData = async function(id, appid) {
   }
 }
 
-exports.listData = async function(appid, page, size) {
+exports.listData = async function(appid, page, size, query = {}) {
   const collectionName = `collection${appid}`;
   if(db) {
     const collection = db.collection(collectionName);
@@ -99,7 +99,7 @@ exports.listData = async function(appid, page, size) {
         limit: Number(size)
       }
     }
-    const result = await collection.find({}, {
+    const result = await collection.find(query || {}, {
       ...options
     }).toArray();
     return result
