@@ -10,41 +10,28 @@ exports.init = async function ($args) {
     args = $args;
 };
 
-exports.index = function() {
-    return 'nodex-dss'
-}
-
-exports.addData = async function (body) {
-    const { appid } = body;
+exports.add = async function ({ appid, ...ret }) {
     fmt.required(appid, 'word', 4, 64);
-    const result = await data.addData(body);
-    return result;
+    return await data.add({ appid, ...ret });
 };
 
-exports.getDataById = async function ({ id, appid }) {
+exports.get = async function ({ id, appid }) {
     fmt.required(appid, 'word', 4, 64);
-    console.log(appid)
-    const result = await data.getDataById(id, appid);
-    console.log(result)
-
-    return result;
+    return await data.get(id, appid);
 }
 
-exports.updateData = async function (body) {
-    const { appid } = body;
+exports.set = async function ({ appid, id, ...ret }) {
     fmt.required(appid, 'word', 4, 64);
-    const result = await data.updateData(body);
-    return result;
+    fmt.required(id, 'word', 4, 64);
+    return await data.set({ appid, id, ...ret });
 }
 
-exports.deleteData = async function ({ id, appid }) {
+exports.del = async function ({ query, appid }) {
     fmt.required(appid, 'word', 4, 64);
-    const result = await data.deleteData(id, appid);
-    return result;
+    return await data.del(appid, query);
 }
 
-exports.listData = async function({ appid, page, size, query }) {
+exports.list = async function({ appid, page, size, query }) {
     fmt.required(appid, 'word', 4, 64);
-    const result = await data.listData(appid, page, size, query);
-    return result;
+    return await data.list(appid, page, size, query);
 }
